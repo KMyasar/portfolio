@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <!-- Background -->
+  <rect width="500" height="200" fill="#000000" />
+
+  <!-- Sleek Jaguar-like Shape -->
+  <path d="M50 150 C 100 50, 250 50, 400 150" fill="none" stroke="#ffffff" stroke-width="5" />
+  <circle cx="150" cy="125" r="10" fill="#ffffff" />
+  <circle cx="200" cy="125" r="10" fill="#ffffff" />
+
+  <!-- Text -->
+  <text x="50" y="180" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    MohamedYasar
+  </text>
+</svg>
