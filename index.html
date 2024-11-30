@@ -38,7 +38,7 @@
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testmonial">Testmonial</a>
+            <a class="nav-link" href="#certification">Certification</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#blog">Blog</a>
@@ -190,6 +190,162 @@
       </div>
     </div>
   </section>
+  <section id="portfolio" class="section">
+    <div class="container text-center">
+        <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+        <p class="mb-5 pb-4"> A complete system for managing book inventory, sales, and customer details.</p>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-1.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-2.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>                              
+                    </div>
+                </div>                  
+            </div>
+            <div class="col-sm-4">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-3.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-4.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>                              
+                    </div>
+                </div>                  
+            </div>
+            <div class="col-sm-4">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-5.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-6.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>                              
+                    </div>
+                </div>                  
+            </div>
+        </div>
+        <br>
+        <p class="mb-5 pb-4"> A complete system for managing book inventory, sales, and customer details.</p>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-1.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img src="assets/imgs/folio-2.jpg" alt=""/>
+                    <div class="overlay">
+                        <div class="overlay-infos">
+                            <h5>Project Title</h5>
+                            <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                        </div>                              
+                    </div>
+                </div>                  
+            </div>
+
+    </div>
+  </section>
+  <!-- Certification Section -->
+  <section id="certification" class="section">
+    <div class="container text-center">
+        <h6 class="section-title mb-4">Certification</h6>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <!-- Indicators will be dynamically generated -->
+            </ol>
+            <div class="carousel-inner">
+                <!-- Slides will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+  .carousel-inner img {
+      max-height: 400px; /* Adjust as needed */
+      object-fit: contain; /* Ensures the image fits within the boundaries */
+  }
+</style>
+
+<script>
+    const cert = [
+        { cert_name: "Lahtp_participation.png", alt_text: "LAHTP" },
+        { cert_name: "IBM_PYTHON.png", alt_text: "Python Basics for Data Science"},
+        {cert_name: "Linux_Foundation.png", alt_text: "Introduciton to linux"},
+        {cert_name: "Software_simulation_forage.pdf", alt_text: "Advance software engineering simulation"},
+        {cert_name: "LUJS0720A1557.pdf", alt_text: "JavaScript Essentials"}
+      ];
+
+    const carouselIndicators = document.querySelector("#carouselExampleIndicators .carousel-indicators");
+    const carouselInner = document.querySelector("#carouselExampleIndicators .carousel-inner");
+
+    // Populate the indicators and slides
+    cert.forEach((slide, index) => {
+        // Add indicator
+        const indicator = document.createElement("li");
+        indicator.setAttribute("data-target", "#carouselExampleIndicators");
+        indicator.setAttribute("data-slide-to", index);
+        if (index === 0) indicator.classList.add("active");
+        carouselIndicators.appendChild(indicator);
+
+        // Add slide
+        const slideDiv = document.createElement("div");
+        slideDiv.classList.add("carousel-item");
+        if (index === 0) slideDiv.classList.add("active");
+        slideDiv.innerHTML = `
+            <img class="d-block w-100" src="assets/imgs/${slide.cert_name}" alt="${slide.alt_text}">
+        `;
+        carouselInner.appendChild(slideDiv);
+    });
+</script>
+
+<!-- End of testmonial section -->
 
   <!-- core  -->
   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
