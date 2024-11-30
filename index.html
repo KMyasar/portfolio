@@ -120,12 +120,76 @@
           I’m excited about continuous learning and solving real-world problems through technology. Feel free to explore
           my portfolio and connect with me for collaboration opportunities!
         </p>
-        <button onclick="location.href='assets/file/Yasar.pdf'" class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>
+        <button onclick="location.href='assets/file/Yasar.pdf'" class="btn btn-primary rounded mt-3">DOWNLOAD
+          CV</button>
       </div>
     </div>
     </div>
   </section>
-  <script></script>
+  <section id="service" class="section">
+    <div class="container text-center">
+      <h6 class="section-title mb-4">What I Do</h6>
+      <p class="mb-5 pb-4">I provide exceptional services tailored to your needs.</p>
+      <div class="row" id="services-container"></div>
+    </div>
+  </section>
+
+  <script>
+    // JavaScript to generate services
+    const services = [
+      { icon : "ti-desktop", title: "Full-Stack Development" },
+      { icon : "ti-pie-chart", title: "Database Management" },
+      { icon : "ti-file", title: "Automation and Scripting" },
+      { icon : "ti-cloud", title: "Cyber Security" }
+    ];
+
+    const servicesContainer = document.getElementById("services-container");
+
+    // Add service cards directly in JavaScript
+    servicesContainer.innerHTML = `
+        ${services.map(service => `
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="custom-card card border">
+                    <div class="card-body">
+                        <i class="icon ${service.icon}"></i>
+                        <h5>${service.title}</h5>
+                    </div>
+                </div>
+            </div>
+        `).join('')}
+    `;
+  </script>
+  <!-- Skills section -->
+  <section class="section">
+    <div class="container text-center">
+      <h6 class="section-title mb-4">Why Choose me</h6>
+      <p class="mb-5 pb-4">I specialize in creating efficient, scalable solutions tailored to client needs, whether it's
+        building a web application, optimizing databases, or securing systems.</p>
+
+      <div class="row text-left" id="skill-set">
+        <script>
+          const skills = [{ program : "C", width: "85" }, { program : "PHP", width: "90" },
+          { program : "Python", width : "85"}, {program : "JavaScript", width : "75"},
+          { program : "MySQL" , width : "90"}, { program : "MongoDB", width : "70"},
+          { program : "Bootstrap", width : "90"}, {program : "ReactJS" , width : "70"},
+          { program : "Git", width : "90"}]
+          const skillset = document.getElementById("skill-set")
+
+          skillset.innerHTML = `
+            ${skills.map(service => `
+              <div class="col-sm-6">
+                <h6 class="mb-3">${service.program}</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: ${service.width}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>${service.width}%</span></div>
+                </div>
+              </div>
+            `).join('')
+            }
+            `;
+        </script>
+      </div>
+    </div>
+  </section>
 
   <!-- core  -->
   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
