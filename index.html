@@ -58,7 +58,7 @@
         <p>Software Developer</p>
 
         <div class="buttons pt-3">
-          <button class="btn btn-primary rounded">HIRE ME</button>
+          <button onclick="location.href='mailto:yasararafathpers@gmail.com'" class="btn btn-primary rounded">HIRE ME</button>
           <button class="btn btn-dark rounded" onclick="document.getElementById('link').click()">
             DOWNLOAD CV
           </button>
@@ -93,14 +93,6 @@
   <!-- About section -->
   <section id="about" class="section mt-3">
     <div class="container mt-5">
-      <!-- <div class="row text-center text-md-left">
-          <div class="col-md-3">
-            <img
-              src="assets/imgs/avatar.jpg"
-              alt=""
-              class="img-thumbnail mb-4"
-            />
-          </div> -->
       <div class="pl-md-4 col-md-9">
         <h6 class="title">Mohamed yasar arafath K M</h6>
         <p class="subtitle">Software Developer</p>
@@ -114,7 +106,7 @@
           I’m excited about continuous learning and solving real-world problems through technology. Feel free to explore
           my portfolio and connect with me for collaboration opportunities!
         </p>
-        <button onclick="location.href='assets/file/Yasar.pdf'" class="btn btn-primary rounded mt-3">DOWNLOAD
+        <button onclick="location.href='assets/file/resume/Yasar.pdf'" class="btn btn-primary rounded mt-3">DOWNLOAD
           CV</button>
       </div>
     </div>
@@ -308,60 +300,77 @@
 </style>
 
 <script>
-    const cert = [
-        { cert_name: "Lahtp_participation.png", alt_text: "LAHTP" },
-        { cert_name: "IBM_PYTHON.png", alt_text: "Python Basics for Data Science"},
-        {cert_name: "Linux_Foundation.png", alt_text: "Introduciton to linux"},
-        {cert_name: "Software_simulation_forage.pdf", alt_text: "Advance software engineering simulation"},
-        {cert_name: "LUJS0720A1557.pdf", alt_text: "JavaScript Essentials"}
-      ];
+  const certifications = [
+    { cert_name: "Lahtp_participation.png", alt_text: "LAHTP" },
+    { cert_name: "IBM_PYTHON.png", alt_text: "Python Basics for Data Science" },
+    { cert_name: "Linux_Foundation.png", alt_text: "Introduction to Linux" },
+    { cert_name: "Software_simulation_forage.pdf", alt_text: "Software Simulation Forage" }
+  ];
 
-    const carouselIndicators = document.querySelector("#carouselExampleIndicators .carousel-indicators");
-    const carouselInner = document.querySelector("#carouselExampleIndicators .carousel-inner");
+  const indicators = document.querySelector('.carousel-indicators');
+  const slides = document.querySelector('.carousel-inner');
 
-    // Populate the indicators and slides
-    cert.forEach((slide, index) => {
-        // Add indicator
-        const indicator = document.createElement("li");
-        indicator.setAttribute("data-target", "#carouselExampleIndicators");
-        indicator.setAttribute("data-slide-to", index);
-        if (index === 0) indicator.classList.add("active");
-        carouselIndicators.appendChild(indicator);
+  certifications.forEach((cert, index) => {
+    // Generate carousel indicators
+    const indicator = document.createElement('li');
+    indicator.setAttribute('data-target', '#carouselExampleIndicators');
+    indicator.setAttribute('data-slide-to', index);
+    if (index === 0) indicator.classList.add('active');
+    indicators.appendChild(indicator);
 
-        // Add slide
-        const slideDiv = document.createElement("div");
-        slideDiv.classList.add("carousel-item");
-        if (index === 0) slideDiv.classList.add("active");
-        slideDiv.innerHTML = `
-            <img class="d-block w-100" src="assets/imgs/${slide.cert_name}" alt="${slide.alt_text}">
-        `;
-        carouselInner.appendChild(slideDiv);
-    });
+    // Generate carousel slides
+    const slide = document.createElement('div');
+    slide.classList.add('carousel-item');
+    if (index === 0) slide.classList.add('active');
+    slide.innerHTML = `
+      <img src="assets/file/certifications/${cert.cert_name}" class="d-block w-100" alt="${cert.alt_text}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>${cert.alt_text}</h5>
+      </div>
+    `;
+    slides.appendChild(slide);
+  });
 </script>
-
 <!-- End of Certification section -->
  <!-- Contact Section -->
  <section id="contact" class="position-relative section">
   <div class="container text-center">
-      <h6 class="subtitle">Contact</h6>
-      <h6 class="section-title mb-4">Get In Touch With Me</h6>
-      <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
+      <h6 class="section-title mb-4">Contact</h6>
+      <br>
       <div class="contact text-left">
           <div class="form">
               <h6 class="section-title mb-4">Get In Touch</h6>
-              <form>
-                  <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                  </div>
-                  <div class="form-group">
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                  </div>
-                  <div class="form-group">
-                      <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
-              </form>
+              <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" cols="30" rows="5" class="form-control" placeholder="Message" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary btn-block rounded w-lg" onclick="composeEmail()">Send Message</button>
+            </form>
+            
+            <script>
+                function composeEmail() {
+                    // Get form data
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+            
+                    // Validate input
+                    if (!email || !subject || !message) {
+                        alert('Please fill out all fields.');
+                        return;
+                    }
+            
+                    // Construct the mailto link
+                    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+            
+                    // Open the mail client
+                    window.location.href = mailtoLink;
+                }
+            </script>
+            
           </div>
           <div class="contact-infos">
               <div class="item">
