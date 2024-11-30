@@ -24,26 +24,44 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#service">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certification">Certification</a>
-          </li>
-          <li class="nav-item">
-            <a class="- btn btn-primary rounded ml-4" href="#contact">Contact</a>
-          </li>
+        <ul id="navbar" class="navbar-nav">
+          <!-- Navigation items will be added here using JavaScript -->
         </ul>
+        
+        <script>
+          // Array of objects representing each nav item
+          const navItems = [
+            { name: 'Home', href: '#home', class: 'nav-link' },
+            { name: 'About', href: '#about', class: 'nav-link' },
+            { name: 'Service', href: '#service', class: 'nav-link' },
+            { name: 'Portfolio', href: '#portfolio', class: 'nav-link' },
+            { name: 'Certification', href: '#certification', class: 'nav-link' },
+            { name: 'Contact', href: '#contact', class: 'btn btn-primary rounded ml-4' }
+          ];
+        
+          // Get the navbar container
+          const navbar = document.getElementById('navbar');
+        
+          // Iterate over the navItems array and create the list items
+          navItems.forEach(item => {
+            // Create a <li> element
+            const li = document.createElement('li');
+            li.classList.add('nav-item');
+            
+            // Create an <a> element for the link
+            const a = document.createElement('a');
+            a.className = item.class;  // Add the appropriate class
+            a.href = item.href;
+            a.textContent = item.name;
+        
+            // Append the <a> element to the <li> element
+            li.appendChild(a);
+        
+            // Append the <li> element to the navbar
+            navbar.appendChild(li);
+          });
+        </script>
+        
       </div>
     </div>
   </nav>
