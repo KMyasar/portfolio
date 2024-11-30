@@ -3,7 +3,7 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - main # Change to your desired branch
+      - main # Change this to your desired branch
 
 jobs:
   build:
@@ -16,14 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '23'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build the project
-        run: npm run build
-
+          node-version: '23.3.0'
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
