@@ -87,7 +87,7 @@
         <div class="socials mt-4">
           <a class="social-item" href="https://stackoverflow.com/users/12359898/mohamed-yasar"><i
               class="ti-stack-overflow"></i></a>
-          <a class="social-item" href="https://linked.com/in/mhdyasar21"><i class="ti-linkedin"></i></a>
+          <a class="social-item" href="https://linkedin.com/in/mhdyasar21"><i class="ti-linkedin"></i></a>
           <a class="social-item" href="http://github.com/KMyasar/"><i class="ti-github"></i></a>
           <a class="social-item" href="https://www.hackerrank.com/profile/smartyasar47"><i class="ti-user"></i></a>
 
@@ -216,7 +216,7 @@ const portfolioItems = [
     { src: "assets/imgs/img2.png", title: "Feedback" },
     { src: "assets/imgs/img3.png", title: "Product View" },
     { src: "assets/imgs/img4.png", title: "About" },
-    { src: "assets/imgs/Data_Schema.png", title: "Database_schema" }
+    { src: "assets/imgs/img6.png", title: "Login page" }
 ];
 
 // Reference to the portfolio content container
@@ -343,18 +343,17 @@ columns.forEach(col => portfolioContent.appendChild(col));
           <script>
             function composeEmail() {
               // Get form data
-              const email = document.getElementById('email').value;
               const subject = document.getElementById('subject').value;
               const message = document.getElementById('message').value;
 
               // Validate input
-              if (!email || !subject || !message) {
+              if (!subject || !message) {
                 alert('Please fill out all fields.');
                 return;
               }
 
               // Construct the mailto link
-              const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+              const mailtoLink = `mailto:${"yasararafathpers@gmail.com"}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
               // Open the mail client
               window.location.href = mailtoLink;
