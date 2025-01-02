@@ -290,7 +290,8 @@ columns.forEach(col => portfolioContent.appendChild(col));
       { cert_name: "Lahtp_participation.png", alt_text: "LAHTP" },
       { cert_name: "IBM_PYTHON.png", alt_text: "Python Basics for Data Science" },
       { cert_name: "Linux_Foundation.png", alt_text: "Introduction to Linux" },
-      { cert_name: "Software_simulation_forage.pdf", alt_text: "Software Simulation Forage" }
+      { cert_name: "Software_simulation_forage.pdf", alt_text: "Software Simulation Forage" },
+      {cert_name : "MERN_Stack.png", alt_text: "MEAN Stack"}
     ];
 
     const indicators = document.querySelector('.carousel-indicators');
@@ -310,9 +311,6 @@ columns.forEach(col => portfolioContent.appendChild(col));
       if (index === 0) slide.classList.add('active');
       slide.innerHTML = `
       <img src="assets/file/certifications/${cert.cert_name}" class="d-block w-100" alt="${cert.alt_text}">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>${cert.alt_text}</h5>
-      </div>
     `;
       slides.appendChild(slide);
     });
