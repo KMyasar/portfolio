@@ -29,7 +29,3 @@ This repository contains the source code and assets for my personal portfolio we
 - **Frontend**: HTML,Bootstrap,CSS3,Jquery.
 - **Deployment**: Static.app
 
----
-
-## 📁 Folder Structure
-
