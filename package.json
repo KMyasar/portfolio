@@ -1,24 +1,5 @@
 {
   "name": "portfolio",
-<<<<<<< HEAD
-  "version": "1.0.0",
-  "description": "This repository contains the source code and assets for my personal portfolio website. The website serves as a platform to showcase my skills, projects, and professional journey in an engaging and interactive manner.",
-  "main": "index.js",
-  "scripts": {
-    "build": "react-scripts build", 
-    "deploy": "firebase deploy --only hosting",  
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "firebase": "^9.0.0",  
-    "react": "^18.0.0",  
-    "react-dom": "^18.0.0"  
-  },
-  "devDependencies": {
-    "firebase-tools": "^11.0.0"  
-=======
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -64,6 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
->>>>>>> e03a53c (feat: replace existing portfolio with new React-based template and Firebase deployment)
   }
 }
