@@ -1,39 +1,6 @@
-<<<<<<< HEAD
-# My Portfolio Website 🌐
-
-This repository contains the source code and assets for my personal portfolio website. The website serves as a platform to showcase my skills, projects, and professional journey in an engaging and interactive manner.
-
----
-
-## 📋 Table of Contents
-1. [Features](#features)
-2. [Technologies Used](#technologies-used)
-3. [Folder Structure](#folder-structure)
-4. [Installation and Setup](#installation-and-setup)
-5. [Live Preview](#live-preview)
-6. [Contact Information](#contact-information)
-
----
-
-## ✨ Features
-
-- **Home Page**: Personal introduction and summary of expertise.
-- **About Section**: Educational background, certifications, and achievements.
-- **Projects Section**: Detailed information on completed projects.
-- **Skills Section**: List of technical skills and tools.
-- **Contact Section**: Easy access to email, GitHub, and LinkedIn profiles.
-
----
-
-## 🛠️ Technologies Used
-
-- **Frontend**: HTML,Bootstrap,CSS3,Jquery.
-- **Deployment**: Static.app
-
-=======
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+  <a href="https://yasar-arafath.web.app/" target="_blank">yasar-arafath.web.app</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
@@ -53,18 +20,18 @@ This repository contains the source code and assets for my personal portfolio we
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/KMyasar/portfolio/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
+    <a href="https://github.com/KMyasar/portfolio/issues">Request Feature</a>
 </h3>
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [KMyasar](https://github.com/KMyasar/portfolio/). Thanks!
 
 ## Built With
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://yasar-arafath.web.app/" target="_blank">yasar-arafath.web.app</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
@@ -102,9 +69,6 @@ The page will reload if you make edits.
 Open the project folder and Navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
 
-### Show your support
+## Credits
 
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
->>>>>>> e03a53c (feat: replace existing portfolio with new React-based template and Firebase deployment)
+This portfolio website was designed and developed by [soumyajit4419](https://github.com/soumyajit4419/).
