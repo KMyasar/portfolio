@@ -1,27 +1,16 @@
 {
   "hosting": {
-<<<<<<< HEAD
-    "public": "public",
-=======
     "public": "build",
->>>>>>> e03a53c (feat: replace existing portfolio with new React-based template and Firebase deployment)
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-<<<<<<< HEAD
-    "github": {
-    "repo": "KMyasar/portfolio",
-    "branch": "main"
-    }
-=======
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
     ]
->>>>>>> e03a53c (feat: replace existing portfolio with new React-based template and Firebase deployment)
   }
 }
