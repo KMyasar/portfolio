@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as N8NIcon } from '../../Assets/n8n.svg';
 import { Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
@@ -57,7 +58,7 @@ function Techstack() {
         <SiDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiN8N />
+        <N8NIcon style={{ width: "50px", height: "50px" }} />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiApache />
