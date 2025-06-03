@@ -15,6 +15,8 @@ import {
   SiPhp,
   SiPhpmyadmin,
   SiApache,
+  SiN8N,
+  SiDocker,
 } from "react-icons/si";
 
 function Techstack() {
@@ -50,6 +52,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiN8N />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiApache />
