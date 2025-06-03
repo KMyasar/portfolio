@@ -16,7 +16,6 @@ import {
   SiPhp,
   SiPhpmyadmin,
   SiApache,
-  SiN8N,
   SiDocker,
 } from "react-icons/si";
 
