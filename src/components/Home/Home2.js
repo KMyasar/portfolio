@@ -19,25 +19,28 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            A tech enthusiast, self-learner, and aspiring <b className="purple">software engineer</b> with a passion for turning ideas into real-world solutions.
+              A tech enthusiast, self-learner, and aspiring <b className="purple">software engineer</b> with a passion for turning ideas into real-world solutions.
               <br />
-              <br />My journey into tech started not in a classroom, but with curiosity and a keyboard. I began teaching myself programming at 20, diving into <i>
-                <b className="purple"> C </b>
-              </i>, then exploring <i>
+              <br />My journey into tech started not in a classroom, but with curiosity and a keyboard. I began teaching myself programming at 20 — diving into <i>
+                <b className="purple"> C</b>
+              </i>, then exploring<i>
                 <b className="purple"> PHP </b>
-              </i>and <i>
-                <b className="purple"> Python </b>
-              </i>.
-    
+              </i> and<i>
+                <b className="purple"> Python</b>
+              </i>, gradually building my skills in <b className="purple">full-stack development</b>, <b className="purple">system-level programming</b>, and <b className="purple">automation</b>.
+
               <br />
               <br />
-              Whether I’m designing user-friendly interfaces or architecting backend systems, I bring a problem-solving mindset, adaptability, and a genuine love for learning.
-              <br/>
-              <br/>
+              Over time, my interest expanded into cybersecurity. From understanding how systems break to learning how to secure them, I’ve developed a strong foundation in security concepts.
+              <br />
+              <br />
+              Whether I’m building production-ready applications or breaking things to understand them better, I bring a problem-solving mindset, professional development habits, and a passion for secure, reliable engineering.
+              <br />
+              <br />
               <i>
                 <b className="purple">Code with purpose. Learn with passion. Build for impact
-                  </b></i>   
-                  </p>
+                </b></i>
+            </p>
           </Col>
 
           <Col md={4} className="myAvtar">

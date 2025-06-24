@@ -95,7 +95,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/certificates"
+                to="/certification"
                 onClick={() => updateExpanded(false)}
               >
                 <GrCertificate style={{ marginBottom: "2px" }} /> Certificates

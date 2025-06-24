@@ -1,12 +1,14 @@
 import React from "react";
 import { ReactComponent as N8NIcon } from '../../Assets/n8n.svg';
 import { Col, Row } from "react-bootstrap";
+import { TbBrandPowershell } from "react-icons/tb";
 import {
   DiJavascript1,
   DiMongodb,
   DiPython,
   DiGit,
   DiBootstrap,
+  DiJava,
 } from "react-icons/di";
 
 import {
@@ -17,23 +19,26 @@ import {
   SiPhpmyadmin,
   SiApache,
   SiDocker,
+  SiGnubash,
 } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJava />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPython />
+      </Col>
        <Col xs={4} md={2} className="tech-icons">
         <SiPhp />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiC />
-      </Col>
-     
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiC />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiLaravel />
@@ -52,6 +57,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGnubash />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandPowershell />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiDocker />
