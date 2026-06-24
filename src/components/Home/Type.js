@@ -9,7 +9,7 @@ function Type() {
           "Scripting & Automation Developer",
           "Cybersecurity Enthusiast",
           "Software Architect",
-          "System Programmer"
+          "QA Engineer"
         ],
         autoStart: true,
         loop: true,

@@ -8,30 +8,42 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Mohamed Yasar Arafath K M </span>
-            from <span className="purple"> Chennai, India.</span>
-            <br/>
-            I'm a passionate and curious Programmer, always eager to learn and explore new technologies.
-            <br/>
-            I have completed Master's in <span className="purple">Computer Application</span> at Measi Insitute of Information Technology(MIIT).
+            Hi, I'm <span className="purple">Mohamed Yasar Arafath K M</span>  
+            a curious mind from <span className="purple">Chennai</span> who 
+            discovered programming not in a classroom, but through late night 
+            curiosity and a keyboard that never let me sleep.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            What started as tinkering with <span className="purple">C</span> and 
+            <span className="purple"> PHP</span> evolved into a full fledged career 
+            in <span className="purple">software quality</span> and 
+            <span className="purple"> automation</span>. Today, I find joy in 
+            writing scripts that catch bugs before they reach production, and 
+            analyzing systems for vulnerabilities that others might miss.
+            <br />
+            <br />
+            I believe the best engineers are those who understand both sides of 
+            the coin how to build <span className="purple">and</span> how to break. 
+            That's why I'm equally comfortable writing automation frameworks and 
+            thinking like an attacker to secure applications.
+            <br />
+            <br />
+            When I'm not in front of a screen, you'll find me:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Online Games
+              <ImPointRight /> Competing in online multiplayer games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Doing Physical Activities
+              <ImPointRight /> Pushing limits at the gym
             </li>
             <li className="about-activity">
-              <ImPointRight /> Watching Movies
+              <ImPointRight /> Getting lost in movies and tech documentaries
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "A developer by choice, a problem-solver by nature."{" "}
+            "Curiosity didn't kill the cat — it made her a better engineer."
           </p>
           <footer className="blockquote-footer">Mohamed Yasar</footer>
         </blockquote>

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import packet from "../../Assets/Projects/packet_capture.png";
+import arpSpoof from "../../Assets/Projects/arp_spoof.png";
 import bookshop from "../../Assets/Projects/bookshop.png"
 import url_shortener from "../../Assets/Projects/url_shortener.png";
 import Student_manage from "../../Assets/Projects/Student_manage.png";
@@ -20,6 +20,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={arpSpoof} 
+              isBlog={false}
+              title="ARP Spoof Detector"
+              description="A professional network security tool written in C that monitors ARP traffic in real-time to detect potential spoofing attacks. Uses libpcap for packet capture with frequency-based detection algorithms."
+              ghLink="https://github.com/KMyasar/ARP_Spoof_Detector"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={proxy_redirector}
@@ -47,15 +56,7 @@ function Projects() {
               ghLink="https://github.com/Kmyasar/bookshop"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={packet}
-              isBlog={false}
-              title="Packet Sniffer"
-              description="This is a basic packet sniffer program written in C that uses the libpcap library to capture and display basic information about network packets on a specified interface."
-              ghLink="https://github.com/KMyasar/packet-sniffer"
-            />
-          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={log_monitor}
