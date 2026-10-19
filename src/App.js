@@ -7,6 +7,8 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Certification from "./components/Certification/Certifications";
+import ThemeToggle from "./components/ThemeToggle";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +19,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./theme.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -34,6 +37,7 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
+        <ThemeToggle />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -41,7 +45,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/certification" element={<Certification />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

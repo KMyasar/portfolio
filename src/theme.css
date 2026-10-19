@@ -1,0 +1,122 @@
+/* =========================================
+   Theme variables
+   ========================================= */
+:root[data-theme="light"] {
+  --bg-color: #f7f7fb;
+  --text-color: #1e2327;
+  --card-bg: #ffffff;
+  --accent-color: #7a2fb0;
+  --footer-bg: #ececf3;
+  --nav-bg: rgba(255, 255, 255, 0.92);
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #140f23;
+  --text-color: #e6e6e6;
+  --card-bg: #2a3035;
+  --accent-color: #c770f0;
+  --footer-bg: rgb(10, 4, 22);
+  --nav-bg: #1b1a2ea9;
+}
+
+/* =========================================
+   Base body
+   ========================================= */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root[data-theme="dark"] body {
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
+
+:root[data-theme="light"] body {
+  background-image: none;
+}
+
+/* =========================================
+   Light mode overrides
+   (dark mode keeps the original styles)
+   ========================================= */
+:root[data-theme="light"] .home-section,
+:root[data-theme="light"] .project-section,
+:root[data-theme="light"] .about-section,
+:root[data-theme="light"] .resume-section {
+  background-image: none !important;
+  background-color: var(--bg-color) !important;
+}
+
+:root[data-theme="light"] .home-content,
+:root[data-theme="light"] .home-about-description,
+:root[data-theme="light"] .home-about-social,
+:root[data-theme="light"] .about-section,
+:root[data-theme="light"] .resume-section,
+:root[data-theme="light"] .project-section,
+:root[data-theme="light"] .project-card-view,
+:root[data-theme="light"] .blog-card-view,
+:root[data-theme="light"] .quote-card-view,
+:root[data-theme="light"] .project-heading,
+:root[data-theme="light"] .navbar-brand,
+:root[data-theme="light"] .navbar-nav .nav-link,
+:root[data-theme="light"] .blog-link,
+:root[data-theme="light"] .footer h3,
+:root[data-theme="light"] .footer a {
+  color: var(--text-color) !important;
+}
+
+:root[data-theme="light"] .sticky,
+:root[data-theme="light"] .navbar {
+  background-color: var(--nav-bg) !important;
+}
+
+@media (max-width: 767px) {
+  :root[data-theme="light"] .navbar {
+    background-color: var(--nav-bg) !important;
+  }
+}
+
+:root[data-theme="light"] .footer {
+  background-color: var(--footer-bg) !important;
+}
+
+:root[data-theme="light"] .project-card-view,
+:root[data-theme="light"] .blog-card-view,
+:root[data-theme="light"] .tech-icons {
+  background-color: var(--card-bg) !important;
+}
+
+:root[data-theme="light"] .home-about-body,
+:root[data-theme="light"] .home-about-social p,
+:root[data-theme="light"] .home-about-social h1 {
+  color: var(--text-color);
+}
+
+/* =========================================
+   Toggle button
+   ========================================= */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-color);
+  background: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+}
